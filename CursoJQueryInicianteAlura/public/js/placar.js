@@ -18,7 +18,12 @@
 
 function removeLinha() {
     event.preventDefault();
-    $(this).parent().parent().remove();
+    var linha = $(this).parent().parent();
+    linha.fadeOut();
+    setTimeout(function () {
+        linha.remove();
+    }, 1000);
+    
 }
 
 function inserirPlacar() {
@@ -32,4 +37,20 @@ function inserirPlacar() {
     linha.find(".botao-remover").click(removeLinha);
 
     corpoTabela.prepend(linha);
+    $(".placar").slideDown(500);
+    scrollPlacar();
+}
+
+function scrollPlacar() {
+    var posicaoPlacar = $(".placar").offset().top;
+    $("body").animate(
+    {
+        scrollTop: posicaoPlacar+"px"
+    }, 1000);
+}
+
+$("#botao-placar").click(mostraPlacar);
+
+function mostraPlacar() {
+    $(".placar").stop().slideToggle(600);
 }

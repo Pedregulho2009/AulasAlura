@@ -123,6 +123,7 @@
     <Content Include="public\fonts\roboto\Roboto-Thin.woff" />
     <Content Include="public\fonts\roboto\Roboto-Thin.woff2" />
     <Content Include="public\js\main.js" />
+    <Content Include="public\js\placar.js" />
     <Content Include="servidor\data.db" />
     <Content Include="servidor\node_modules\body-parser\HISTORY.md" />
     <Content Include="servidor\node_modules\body-parser\LICENSE" />
