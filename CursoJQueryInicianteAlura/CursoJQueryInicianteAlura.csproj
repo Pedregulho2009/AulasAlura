@@ -1,0 +1,1042 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{228BADD1-4695-4092-9144-D8C893AD2DB0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CursoJQueryInicianteAlura</RootNamespace>
+    <AssemblyName>CursoJQueryInicianteAlura</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\fonts\material-design-icons\Material-Design-Icons.eot" />
+    <Content Include="public\fonts\material-design-icons\Material-Design-Icons.ttf" />
+    <Content Include="public\fonts\material-design-icons\Material-Design-Icons.woff" />
+    <Content Include="public\fonts\material-design-icons\Material-Design-Icons.woff2" />
+    <Content Include="public\fonts\roboto\Roboto-Bold.eot" />
+    <Content Include="public\fonts\roboto\Roboto-Bold.ttf" />
+    <Content Include="public\fonts\roboto\Roboto-Bold.woff" />
+    <Content Include="public\fonts\roboto\Roboto-Bold.woff2" />
+    <Content Include="public\fonts\roboto\Roboto-Light.eot" />
+    <Content Include="public\fonts\roboto\Roboto-Light.ttf" />
+    <Content Include="public\fonts\roboto\Roboto-Light.woff" />
+    <Content Include="public\fonts\roboto\Roboto-Light.woff2" />
+    <Content Include="public\fonts\roboto\Roboto-Medium.eot" />
+    <Content Include="public\fonts\roboto\Roboto-Medium.ttf" />
+    <Content Include="public\fonts\roboto\Roboto-Medium.woff" />
+    <Content Include="public\fonts\roboto\Roboto-Medium.woff2" />
+    <Content Include="public\fonts\roboto\Roboto-Regular.eot" />
+    <Content Include="public\fonts\roboto\Roboto-Regular.ttf" />
+    <Content Include="public\fonts\roboto\Roboto-Regular.woff" />
+    <Content Include="public\fonts\roboto\Roboto-Regular.woff2" />
+    <Content Include="public\fonts\roboto\Roboto-Thin.eot" />
+    <Content Include="public\fonts\roboto\Roboto-Thin.ttf" />
+    <Content Include="public\fonts\roboto\Roboto-Thin.woff" />
+    <Content Include="public\fonts\roboto\Roboto-Thin.woff2" />
+    <Content Include="public\js\main.js" />
+    <Content Include="servidor\data.db" />
+    <Content Include="servidor\node_modules\body-parser\HISTORY.md" />
+    <Content Include="servidor\node_modules\body-parser\LICENSE" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\bytes\History.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\bytes\LICENSE" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\bytes\package.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\bytes\Readme.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\content-type\HISTORY.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\content-type\LICENSE" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\content-type\package.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\content-type\README.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\debug\.jshintrc" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\debug\.npmignore" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\debug\bower.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\debug\component.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\debug\History.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\debug\Makefile" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\debug\node_modules\ms\.npmignore" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\debug\node_modules\ms\History.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\debug\node_modules\ms\LICENSE" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\debug\node_modules\ms\package.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\debug\node_modules\ms\README.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\debug\package.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\debug\Readme.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\depd\History.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\depd\LICENSE" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\depd\package.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\depd\Readme.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\http-errors\HISTORY.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\http-errors\LICENSE" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\http-errors\node_modules\inherits\LICENSE" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\http-errors\node_modules\inherits\package.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\http-errors\node_modules\inherits\README.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\http-errors\node_modules\setprototypeof\LICENSE" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\http-errors\node_modules\setprototypeof\package.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\http-errors\node_modules\setprototypeof\README.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\http-errors\node_modules\statuses\codes.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\http-errors\node_modules\statuses\HISTORY.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\http-errors\node_modules\statuses\LICENSE" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\http-errors\node_modules\statuses\package.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\http-errors\node_modules\statuses\README.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\http-errors\package.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\http-errors\README.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\iconv-lite\.npmignore" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\iconv-lite\.travis.yml" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\iconv-lite\Changelog.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\iconv-lite\encodings\tables\big5-added.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\iconv-lite\encodings\tables\cp936.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\iconv-lite\encodings\tables\cp949.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\iconv-lite\encodings\tables\cp950.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\iconv-lite\encodings\tables\eucjp.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\iconv-lite\encodings\tables\gb18030-ranges.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\iconv-lite\encodings\tables\gbk-added.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\iconv-lite\encodings\tables\shiftjis.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\iconv-lite\LICENSE" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\iconv-lite\package.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\iconv-lite\README.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\on-finished\HISTORY.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\on-finished\LICENSE" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\on-finished\node_modules\ee-first\LICENSE" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\on-finished\node_modules\ee-first\package.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\on-finished\node_modules\ee-first\README.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\on-finished\package.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\on-finished\README.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\qs\.eslintignore" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\qs\.eslintrc" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\qs\.jscs.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\qs\CHANGELOG.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\qs\CONTRIBUTING.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\qs\LICENSE" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\qs\package.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\raw-body\HISTORY.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\raw-body\LICENSE" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\raw-body\node_modules\unpipe\HISTORY.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\raw-body\node_modules\unpipe\LICENSE" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\raw-body\node_modules\unpipe\package.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\raw-body\node_modules\unpipe\README.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\raw-body\package.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\raw-body\README.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\type-is\HISTORY.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\type-is\LICENSE" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\type-is\node_modules\media-typer\HISTORY.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\type-is\node_modules\media-typer\LICENSE" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\type-is\node_modules\media-typer\package.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\type-is\node_modules\media-typer\README.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\type-is\node_modules\mime-types\HISTORY.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\type-is\node_modules\mime-types\LICENSE" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\type-is\node_modules\mime-types\node_modules\mime-db\db.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\type-is\node_modules\mime-types\node_modules\mime-db\HISTORY.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\type-is\node_modules\mime-types\node_modules\mime-db\LICENSE" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\type-is\node_modules\mime-types\node_modules\mime-db\package.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\type-is\node_modules\mime-types\node_modules\mime-db\README.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\type-is\node_modules\mime-types\package.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\type-is\node_modules\mime-types\README.md" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\type-is\package.json" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\type-is\README.md" />
+    <Content Include="servidor\node_modules\body-parser\package.json" />
+    <Content Include="servidor\node_modules\body-parser\README.md" />
+    <Content Include="servidor\node_modules\consign\.jshintrc" />
+    <Content Include="servidor\node_modules\consign\.npmignore" />
+    <Content Include="servidor\node_modules\consign\.travis.yml" />
+    <Content Include="servidor\node_modules\consign\LICENSE" />
+    <Content Include="servidor\node_modules\consign\locale\en-au.json" />
+    <Content Include="servidor\node_modules\consign\locale\en-nz.json" />
+    <Content Include="servidor\node_modules\consign\locale\en-us.json" />
+    <Content Include="servidor\node_modules\consign\locale\fr-fr.json" />
+    <Content Include="servidor\node_modules\consign\locale\pl.json" />
+    <Content Include="servidor\node_modules\consign\locale\pt-br.json" />
+    <Content Include="servidor\node_modules\consign\locale\zh-cn.json" />
+    <Content Include="servidor\node_modules\consign\package.json" />
+    <Content Include="servidor\node_modules\consign\README.md" />
+    <Content Include="servidor\node_modules\consign\test\test-app\config\dev-config.json" />
+    <Content Include="servidor\node_modules\express\History.md" />
+    <Content Include="servidor\node_modules\express\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\accepts\HISTORY.md" />
+    <Content Include="servidor\node_modules\express\node_modules\accepts\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\accepts\node_modules\mime-types\HISTORY.md" />
+    <Content Include="servidor\node_modules\express\node_modules\accepts\node_modules\mime-types\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\accepts\node_modules\mime-types\node_modules\mime-db\db.json" />
+    <Content Include="servidor\node_modules\express\node_modules\accepts\node_modules\mime-types\node_modules\mime-db\HISTORY.md" />
+    <Content Include="servidor\node_modules\express\node_modules\accepts\node_modules\mime-types\node_modules\mime-db\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\accepts\node_modules\mime-types\node_modules\mime-db\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\accepts\node_modules\mime-types\node_modules\mime-db\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\accepts\node_modules\mime-types\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\accepts\node_modules\mime-types\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\accepts\node_modules\negotiator\HISTORY.md" />
+    <Content Include="servidor\node_modules\express\node_modules\accepts\node_modules\negotiator\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\accepts\node_modules\negotiator\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\accepts\node_modules\negotiator\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\accepts\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\accepts\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\array-flatten\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\array-flatten\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\array-flatten\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\content-disposition\HISTORY.md" />
+    <Content Include="servidor\node_modules\express\node_modules\content-disposition\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\content-disposition\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\content-disposition\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\content-type\HISTORY.md" />
+    <Content Include="servidor\node_modules\express\node_modules\content-type\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\content-type\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\content-type\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\cookie-signature\.npmignore" />
+    <Content Include="servidor\node_modules\express\node_modules\cookie-signature\History.md" />
+    <Content Include="servidor\node_modules\express\node_modules\cookie-signature\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\cookie-signature\Readme.md" />
+    <Content Include="servidor\node_modules\express\node_modules\cookie\HISTORY.md" />
+    <Content Include="servidor\node_modules\express\node_modules\cookie\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\cookie\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\cookie\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\debug\.jshintrc" />
+    <Content Include="servidor\node_modules\express\node_modules\debug\.npmignore" />
+    <Content Include="servidor\node_modules\express\node_modules\debug\bower.json" />
+    <Content Include="servidor\node_modules\express\node_modules\debug\component.json" />
+    <Content Include="servidor\node_modules\express\node_modules\debug\History.md" />
+    <Content Include="servidor\node_modules\express\node_modules\debug\Makefile" />
+    <Content Include="servidor\node_modules\express\node_modules\debug\node_modules\ms\.npmignore" />
+    <Content Include="servidor\node_modules\express\node_modules\debug\node_modules\ms\History.md" />
+    <Content Include="servidor\node_modules\express\node_modules\debug\node_modules\ms\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\debug\node_modules\ms\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\debug\node_modules\ms\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\debug\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\debug\Readme.md" />
+    <Content Include="servidor\node_modules\express\node_modules\depd\History.md" />
+    <Content Include="servidor\node_modules\express\node_modules\depd\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\depd\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\depd\Readme.md" />
+    <Content Include="servidor\node_modules\express\node_modules\encodeurl\HISTORY.md" />
+    <Content Include="servidor\node_modules\express\node_modules\encodeurl\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\encodeurl\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\encodeurl\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\escape-html\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\escape-html\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\escape-html\Readme.md" />
+    <Content Include="servidor\node_modules\express\node_modules\etag\HISTORY.md" />
+    <Content Include="servidor\node_modules\express\node_modules\etag\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\etag\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\etag\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\finalhandler\HISTORY.md" />
+    <Content Include="servidor\node_modules\express\node_modules\finalhandler\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\finalhandler\node_modules\statuses\codes.json" />
+    <Content Include="servidor\node_modules\express\node_modules\finalhandler\node_modules\statuses\HISTORY.md" />
+    <Content Include="servidor\node_modules\express\node_modules\finalhandler\node_modules\statuses\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\finalhandler\node_modules\statuses\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\finalhandler\node_modules\statuses\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\finalhandler\node_modules\unpipe\HISTORY.md" />
+    <Content Include="servidor\node_modules\express\node_modules\finalhandler\node_modules\unpipe\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\finalhandler\node_modules\unpipe\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\finalhandler\node_modules\unpipe\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\finalhandler\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\finalhandler\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\fresh\HISTORY.md" />
+    <Content Include="servidor\node_modules\express\node_modules\fresh\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\fresh\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\fresh\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\merge-descriptors\HISTORY.md" />
+    <Content Include="servidor\node_modules\express\node_modules\merge-descriptors\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\merge-descriptors\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\merge-descriptors\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\methods\HISTORY.md" />
+    <Content Include="servidor\node_modules\express\node_modules\methods\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\methods\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\methods\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\on-finished\HISTORY.md" />
+    <Content Include="servidor\node_modules\express\node_modules\on-finished\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\on-finished\node_modules\ee-first\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\on-finished\node_modules\ee-first\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\on-finished\node_modules\ee-first\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\on-finished\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\on-finished\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\parseurl\HISTORY.md" />
+    <Content Include="servidor\node_modules\express\node_modules\parseurl\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\parseurl\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\parseurl\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\path-to-regexp\History.md" />
+    <Content Include="servidor\node_modules\express\node_modules\path-to-regexp\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\path-to-regexp\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\path-to-regexp\Readme.md" />
+    <Content Include="servidor\node_modules\express\node_modules\proxy-addr\HISTORY.md" />
+    <Content Include="servidor\node_modules\express\node_modules\proxy-addr\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\proxy-addr\node_modules\forwarded\HISTORY.md" />
+    <Content Include="servidor\node_modules\express\node_modules\proxy-addr\node_modules\forwarded\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\proxy-addr\node_modules\forwarded\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\proxy-addr\node_modules\forwarded\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\.npmignore" />
+    <Content Include="servidor\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\.travis.yml" />
+    <Content Include="servidor\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\bower.json" />
+    <Content Include="servidor\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\Cakefile" />
+    <Content Include="servidor\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\src\ipaddr.coffee" />
+    <Content Include="servidor\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\test\ipaddr.test.coffee" />
+    <Content Include="servidor\node_modules\express\node_modules\proxy-addr\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\proxy-addr\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\qs\.eslintignore" />
+    <Content Include="servidor\node_modules\express\node_modules\qs\.eslintrc" />
+    <Content Include="servidor\node_modules\express\node_modules\qs\.jscs.json" />
+    <Content Include="servidor\node_modules\express\node_modules\qs\CHANGELOG.md" />
+    <Content Include="servidor\node_modules\express\node_modules\qs\CONTRIBUTING.md" />
+    <Content Include="servidor\node_modules\express\node_modules\qs\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\qs\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\range-parser\HISTORY.md" />
+    <Content Include="servidor\node_modules\express\node_modules\range-parser\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\range-parser\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\range-parser\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\send\HISTORY.md" />
+    <Content Include="servidor\node_modules\express\node_modules\send\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\destroy\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\destroy\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\destroy\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\http-errors\HISTORY.md" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\http-errors\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\http-errors\node_modules\inherits\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\http-errors\node_modules\inherits\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\http-errors\node_modules\inherits\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\http-errors\node_modules\setprototypeof\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\http-errors\node_modules\setprototypeof\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\http-errors\node_modules\setprototypeof\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\http-errors\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\http-errors\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\mime\.npmignore" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\mime\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\mime\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\mime\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\mime\types.json" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\ms\.npmignore" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\ms\History.md" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\ms\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\ms\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\ms\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\statuses\codes.json" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\statuses\HISTORY.md" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\statuses\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\statuses\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\statuses\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\send\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\send\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\serve-static\HISTORY.md" />
+    <Content Include="servidor\node_modules\express\node_modules\serve-static\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\serve-static\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\serve-static\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\type-is\HISTORY.md" />
+    <Content Include="servidor\node_modules\express\node_modules\type-is\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\type-is\node_modules\media-typer\HISTORY.md" />
+    <Content Include="servidor\node_modules\express\node_modules\type-is\node_modules\media-typer\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\type-is\node_modules\media-typer\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\type-is\node_modules\media-typer\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\type-is\node_modules\mime-types\HISTORY.md" />
+    <Content Include="servidor\node_modules\express\node_modules\type-is\node_modules\mime-types\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\type-is\node_modules\mime-types\node_modules\mime-db\db.json" />
+    <Content Include="servidor\node_modules\express\node_modules\type-is\node_modules\mime-types\node_modules\mime-db\HISTORY.md" />
+    <Content Include="servidor\node_modules\express\node_modules\type-is\node_modules\mime-types\node_modules\mime-db\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\type-is\node_modules\mime-types\node_modules\mime-db\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\type-is\node_modules\mime-types\node_modules\mime-db\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\type-is\node_modules\mime-types\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\type-is\node_modules\mime-types\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\type-is\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\type-is\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\utils-merge\.travis.yml" />
+    <Content Include="servidor\node_modules\express\node_modules\utils-merge\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\utils-merge\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\utils-merge\README.md" />
+    <Content Include="servidor\node_modules\express\node_modules\vary\HISTORY.md" />
+    <Content Include="servidor\node_modules\express\node_modules\vary\LICENSE" />
+    <Content Include="servidor\node_modules\express\node_modules\vary\package.json" />
+    <Content Include="servidor\node_modules\express\node_modules\vary\README.md" />
+    <Content Include="servidor\node_modules\express\package.json" />
+    <Content Include="servidor\node_modules\express\Readme.md" />
+    <Content Include="servidor\node_modules\nedb\.npmignore" />
+    <Content Include="servidor\node_modules\nedb\bower.json" />
+    <Content Include="servidor\node_modules\nedb\browser-version\package.json" />
+    <Content Include="servidor\node_modules\nedb\LICENSE" />
+    <Content Include="servidor\node_modules\nedb\node_modules\async\component.json" />
+    <Content Include="servidor\node_modules\nedb\node_modules\async\LICENSE" />
+    <Content Include="servidor\node_modules\nedb\node_modules\async\package.json" />
+    <Content Include="servidor\node_modules\nedb\node_modules\async\README.md" />
+    <Content Include="servidor\node_modules\nedb\node_modules\binary-search-tree\.npmignore" />
+    <Content Include="servidor\node_modules\nedb\node_modules\binary-search-tree\Makefile" />
+    <Content Include="servidor\node_modules\nedb\node_modules\binary-search-tree\package.json" />
+    <Content Include="servidor\node_modules\nedb\node_modules\binary-search-tree\README.md" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\.babelrc" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\.babelrc-umd" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\.jscsrc" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\.jshintrc" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\.npmignore" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\.travis.yml" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\bower.json" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\CHANGELOG.md" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\component.json" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\contribute.json" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\CONTRIBUTING.md" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\docs\api.md" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\docs\fonts\icomoon.eot" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\docs\fonts\icomoon.ttf" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\docs\fonts\icomoon.woff" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\LICENSE" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\.jshintrc" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\.npmignore" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\.travis.yml" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\AUTHORS" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\bower.json" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\component.json" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\dist\.npmignore" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\license.md" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\.npmignore" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\.travis.yml" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\LICENSE" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\.eslintrc" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\.npmignore" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\ChangeLog" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\component.json" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\LICENSE.BSD" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\package.json" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\README.md" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\jstransform\.jshintrc" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\jstransform\.npmignore" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\jstransform\LICENSE" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\jstransform\node_modules\base62\.travis.yml" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\jstransform\node_modules\base62\LICENSE" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\jstransform\node_modules\base62\package.json" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\jstransform\node_modules\base62\Readme.md" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\jstransform\node_modules\source-map\.npmignore" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\jstransform\node_modules\source-map\.travis.yml" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\jstransform\node_modules\source-map\CHANGELOG.md" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\jstransform\node_modules\source-map\LICENSE" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\jstransform\node_modules\source-map\package.json" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\jstransform\node_modules\source-map\README.md" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\jstransform\package.json" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\jstransform\README.md" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\through\.travis.yml" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\through\LICENSE.APACHE2" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\through\LICENSE.MIT" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\through\package.json" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\through\readme.markdown" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\package.json" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\README.md" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\immediate\package.json" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\immediate\README.md" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\inline-process-browser\node_modules\falafel\.travis.yml" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\inline-process-browser\node_modules\falafel\package.json" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\inline-process-browser\node_modules\falafel\readme.markdown" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\inline-process-browser\node_modules\through2\.npmignore" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\inline-process-browser\node_modules\through2\LICENSE" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\inline-process-browser\node_modules\through2\package.json" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\inline-process-browser\node_modules\through2\README.md" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\inline-process-browser\package.json" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\inline-process-browser\readme.md" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\LICENSE" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\node_modules\esmangle-evaluator\.npmignore" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\node_modules\esmangle-evaluator\README.md" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\node_modules\recast\.editorconfig" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\node_modules\recast\.npmignore" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\node_modules\recast\.travis.yml" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\node_modules\recast\example\add-braces" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\node_modules\recast\example\identity" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\node_modules\recast\example\to-while" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\node_modules\recast\LICENSE" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\node_modules\recast\package.json" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\node_modules\recast\README.md" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\node_modules\through2\.npmignore" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\node_modules\through2\LICENSE" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\node_modules\through2\package.json" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\node_modules\through2\README.md" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\package.json" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\README.md" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\package.json" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\README.md" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\package.json" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\README.md" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\.travis.yml" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\LICENSE" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\node_modules\minimist\.travis.yml" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\node_modules\minimist\LICENSE" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\node_modules\minimist\package.json" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\node_modules\minimist\readme.markdown" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\package.json" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\readme.markdown" />
+    <Content Include="servidor\node_modules\nedb\node_modules\underscore\.npmignore" />
+    <Content Include="servidor\node_modules\nedb\node_modules\underscore\.travis.yml" />
+    <Content Include="servidor\node_modules\nedb\node_modules\underscore\CNAME" />
+    <Content Include="servidor\node_modules\nedb\node_modules\underscore\CONTRIBUTING.md" />
+    <Content Include="servidor\node_modules\nedb\node_modules\underscore\LICENSE" />
+    <Content Include="servidor\node_modules\nedb\node_modules\underscore\package.json" />
+    <Content Include="servidor\node_modules\nedb\node_modules\underscore\README.md" />
+    <Content Include="servidor\node_modules\nedb\package.json" />
+    <Content Include="servidor\node_modules\nedb\README.md" />
+    <Content Include="servidor\node_modules\nedb\test\mocha.opts" />
+    <Content Include="servidor\node_modules\nedb\test_lac\openFdsLaunch.sh" />
+    <Content Include="servidor\node_modules\nedb\test_lac\openFdsTestFile" />
+    <Content Include="servidor\node_modules\nedb\test_lac\openFdsTestFile2" />
+    <Content Include="servidor\package.json" />
+    <Content Include="servidor\README.md" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\css\estilos.css" />
+    <Content Include="public\css\libs\google-fonts.css" />
+    <Content Include="public\css\libs\materialize.min.css" />
+    <Content Include="public\css\libs\selectize.default.css" />
+    <Content Include="public\css\libs\tooltipster.bundle.min.css" />
+    <Content Include="public\fonts\material-design-icons\LICENSE.txt" />
+    <Content Include="public\fonts\material-design-icons\Material-Design-Icons.svg" />
+    <Content Include="public\img\slide1.png" />
+    <Content Include="public\img\slide2.png" />
+    <Content Include="public\img\slide3.png" />
+    <Content Include="public\img\spinner.gif" />
+    <Content Include="public\js\jquery.js" />
+    <Content Include="public\principal.html" />
+    <Content Include="servidor\app\api\frases.js" />
+    <Content Include="servidor\app\api\placar.js" />
+    <Content Include="servidor\app\routes\frases.js" />
+    <Content Include="servidor\app\routes\placar.js" />
+    <Content Include="servidor\config\database.js" />
+    <Content Include="servidor\config\express.js" />
+    <Content Include="servidor\node_modules\body-parser\index.js" />
+    <Content Include="servidor\node_modules\body-parser\lib\read.js" />
+    <Content Include="servidor\node_modules\body-parser\lib\types\json.js" />
+    <Content Include="servidor\node_modules\body-parser\lib\types\raw.js" />
+    <Content Include="servidor\node_modules\body-parser\lib\types\text.js" />
+    <Content Include="servidor\node_modules\body-parser\lib\types\urlencoded.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\bytes\index.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\content-type\index.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\debug\browser.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\debug\debug.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\debug\node.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\debug\node_modules\ms\index.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\depd\index.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\depd\lib\browser\index.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\depd\lib\compat\buffer-concat.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\depd\lib\compat\callsite-tostring.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\depd\lib\compat\event-listener-count.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\depd\lib\compat\index.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\http-errors\index.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\http-errors\node_modules\inherits\inherits.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\http-errors\node_modules\inherits\inherits_browser.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\http-errors\node_modules\inherits\test.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\http-errors\node_modules\setprototypeof\index.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\http-errors\node_modules\statuses\index.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\iconv-lite\encodings\dbcs-codec.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\iconv-lite\encodings\dbcs-data.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\iconv-lite\encodings\index.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\iconv-lite\encodings\internal.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\iconv-lite\encodings\sbcs-codec.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\iconv-lite\encodings\sbcs-data-generated.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\iconv-lite\encodings\sbcs-data.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\iconv-lite\encodings\utf16.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\iconv-lite\encodings\utf7.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\iconv-lite\lib\bom-handling.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\iconv-lite\lib\extend-node.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\iconv-lite\lib\index.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\iconv-lite\lib\streams.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\on-finished\index.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\on-finished\node_modules\ee-first\index.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\qs\dist\qs.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\qs\lib\index.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\qs\lib\parse.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\qs\lib\stringify.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\qs\lib\utils.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\qs\test\index.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\qs\test\parse.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\qs\test\stringify.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\qs\test\utils.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\raw-body\index.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\raw-body\node_modules\unpipe\index.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\type-is\index.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\type-is\node_modules\media-typer\index.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\type-is\node_modules\mime-types\index.js" />
+    <Content Include="servidor\node_modules\body-parser\node_modules\type-is\node_modules\mime-types\node_modules\mime-db\index.js" />
+    <Content Include="servidor\node_modules\consign\examples\express\api\middleware\application.js" />
+    <Content Include="servidor\node_modules\consign\examples\express\api\middleware\user.js" />
+    <Content Include="servidor\node_modules\consign\examples\express\api\models\user.js" />
+    <Content Include="servidor\node_modules\consign\examples\express\api\routers\user.js" />
+    <Content Include="servidor\node_modules\consign\examples\express\app.js" />
+    <Content Include="servidor\node_modules\consign\examples\middleware-chain\app.js" />
+    <Content Include="servidor\node_modules\consign\examples\middleware-chain\middleware\one.js" />
+    <Content Include="servidor\node_modules\consign\examples\middleware-chain\middleware\three.js" />
+    <Content Include="servidor\node_modules\consign\examples\middleware-chain\middleware\two.js" />
+    <Content Include="servidor\node_modules\consign\examples\mvc\app.js" />
+    <Content Include="servidor\node_modules\consign\examples\mvc\controllers\user.js" />
+    <Content Include="servidor\node_modules\consign\examples\mvc\models\user.js" />
+    <Content Include="servidor\node_modules\consign\index.js" />
+    <Content Include="servidor\node_modules\consign\lib\consign.js" />
+    <Content Include="servidor\node_modules\consign\test\config.js" />
+    <Content Include="servidor\node_modules\consign\test\exclude.js" />
+    <Content Include="servidor\node_modules\consign\test\include.js" />
+    <Content Include="servidor\node_modules\consign\test\into.js" />
+    <Content Include="servidor\node_modules\consign\test\locale.js" />
+    <Content Include="servidor\node_modules\consign\test\test-app\controllers\one.js" />
+    <Content Include="servidor\node_modules\consign\test\test-app\controllers\three.js" />
+    <Content Include="servidor\node_modules\consign\test\test-app\controllers\two.js" />
+    <Content Include="servidor\node_modules\consign\test\test-app\models\one.js" />
+    <Content Include="servidor\node_modules\consign\test\test-app\models\three.js" />
+    <Content Include="servidor\node_modules\consign\test\test-app\models\two.js" />
+    <Content Include="servidor\node_modules\consign\test\tests.js" />
+    <Content Include="servidor\node_modules\express\index.js" />
+    <Content Include="servidor\node_modules\express\lib\application.js" />
+    <Content Include="servidor\node_modules\express\lib\express.js" />
+    <Content Include="servidor\node_modules\express\lib\middleware\init.js" />
+    <Content Include="servidor\node_modules\express\lib\middleware\query.js" />
+    <Content Include="servidor\node_modules\express\lib\request.js" />
+    <Content Include="servidor\node_modules\express\lib\response.js" />
+    <Content Include="servidor\node_modules\express\lib\router\index.js" />
+    <Content Include="servidor\node_modules\express\lib\router\layer.js" />
+    <Content Include="servidor\node_modules\express\lib\router\route.js" />
+    <Content Include="servidor\node_modules\express\lib\utils.js" />
+    <Content Include="servidor\node_modules\express\lib\view.js" />
+    <Content Include="servidor\node_modules\express\node_modules\accepts\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\accepts\node_modules\mime-types\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\accepts\node_modules\mime-types\node_modules\mime-db\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\accepts\node_modules\negotiator\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\accepts\node_modules\negotiator\lib\charset.js" />
+    <Content Include="servidor\node_modules\express\node_modules\accepts\node_modules\negotiator\lib\encoding.js" />
+    <Content Include="servidor\node_modules\express\node_modules\accepts\node_modules\negotiator\lib\language.js" />
+    <Content Include="servidor\node_modules\express\node_modules\accepts\node_modules\negotiator\lib\mediaType.js" />
+    <Content Include="servidor\node_modules\express\node_modules\array-flatten\array-flatten.js" />
+    <Content Include="servidor\node_modules\express\node_modules\content-disposition\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\content-type\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\cookie-signature\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\cookie\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\debug\browser.js" />
+    <Content Include="servidor\node_modules\express\node_modules\debug\debug.js" />
+    <Content Include="servidor\node_modules\express\node_modules\debug\node.js" />
+    <Content Include="servidor\node_modules\express\node_modules\debug\node_modules\ms\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\depd\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\depd\lib\browser\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\depd\lib\compat\buffer-concat.js" />
+    <Content Include="servidor\node_modules\express\node_modules\depd\lib\compat\callsite-tostring.js" />
+    <Content Include="servidor\node_modules\express\node_modules\depd\lib\compat\event-listener-count.js" />
+    <Content Include="servidor\node_modules\express\node_modules\depd\lib\compat\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\encodeurl\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\escape-html\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\etag\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\finalhandler\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\finalhandler\node_modules\statuses\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\finalhandler\node_modules\unpipe\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\fresh\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\merge-descriptors\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\methods\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\on-finished\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\on-finished\node_modules\ee-first\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\parseurl\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\path-to-regexp\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\proxy-addr\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\proxy-addr\node_modules\forwarded\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\ipaddr.min.js" />
+    <Content Include="servidor\node_modules\express\node_modules\proxy-addr\node_modules\ipaddr.js\lib\ipaddr.js" />
+    <Content Include="servidor\node_modules\express\node_modules\qs\dist\qs.js" />
+    <Content Include="servidor\node_modules\express\node_modules\qs\lib\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\qs\lib\parse.js" />
+    <Content Include="servidor\node_modules\express\node_modules\qs\lib\stringify.js" />
+    <Content Include="servidor\node_modules\express\node_modules\qs\lib\utils.js" />
+    <Content Include="servidor\node_modules\express\node_modules\qs\test\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\qs\test\parse.js" />
+    <Content Include="servidor\node_modules\express\node_modules\qs\test\stringify.js" />
+    <Content Include="servidor\node_modules\express\node_modules\qs\test\utils.js" />
+    <Content Include="servidor\node_modules\express\node_modules\range-parser\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\send\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\destroy\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\http-errors\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\http-errors\node_modules\inherits\inherits.js" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\http-errors\node_modules\inherits\inherits_browser.js" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\http-errors\node_modules\inherits\test.js" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\http-errors\node_modules\setprototypeof\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\mime\build\build.js" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\mime\build\test.js" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\mime\cli.js" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\mime\mime.js" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\ms\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\send\node_modules\statuses\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\serve-static\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\type-is\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\type-is\node_modules\media-typer\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\type-is\node_modules\mime-types\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\type-is\node_modules\mime-types\node_modules\mime-db\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\utils-merge\index.js" />
+    <Content Include="servidor\node_modules\express\node_modules\vary\index.js" />
+    <Content Include="servidor\node_modules\nedb\benchmarks\commonUtilities.js" />
+    <Content Include="servidor\node_modules\nedb\benchmarks\ensureIndex.js" />
+    <Content Include="servidor\node_modules\nedb\benchmarks\find.js" />
+    <Content Include="servidor\node_modules\nedb\benchmarks\findOne.js" />
+    <Content Include="servidor\node_modules\nedb\benchmarks\findWithIn.js" />
+    <Content Include="servidor\node_modules\nedb\benchmarks\insert.js" />
+    <Content Include="servidor\node_modules\nedb\benchmarks\loadDatabase.js" />
+    <Content Include="servidor\node_modules\nedb\benchmarks\remove.js" />
+    <Content Include="servidor\node_modules\nedb\benchmarks\update.js" />
+    <Content Include="servidor\node_modules\nedb\browser-version\browser-specific\lib\customUtils.js" />
+    <Content Include="servidor\node_modules\nedb\browser-version\browser-specific\lib\storage.js" />
+    <Content Include="servidor\node_modules\nedb\browser-version\build.js" />
+    <Content Include="servidor\node_modules\nedb\browser-version\out\nedb.js" />
+    <Content Include="servidor\node_modules\nedb\browser-version\out\nedb.min.js" />
+    <Content Include="servidor\node_modules\nedb\browser-version\test\async.js" />
+    <Content Include="servidor\node_modules\nedb\browser-version\test\chai.js" />
+    <Content Include="servidor\node_modules\nedb\browser-version\test\index.html" />
+    <Content Include="servidor\node_modules\nedb\browser-version\test\jquery.min.js" />
+    <Content Include="servidor\node_modules\nedb\browser-version\test\localforage.js" />
+    <Content Include="servidor\node_modules\nedb\browser-version\test\mocha.css" />
+    <Content Include="servidor\node_modules\nedb\browser-version\test\mocha.js" />
+    <Content Include="servidor\node_modules\nedb\browser-version\test\nedb-browser.js" />
+    <Content Include="servidor\node_modules\nedb\browser-version\test\playground.html" />
+    <Content Include="servidor\node_modules\nedb\browser-version\test\testLoad.html" />
+    <Content Include="servidor\node_modules\nedb\browser-version\test\testLoad.js" />
+    <Content Include="servidor\node_modules\nedb\browser-version\test\testPersistence.html" />
+    <Content Include="servidor\node_modules\nedb\browser-version\test\testPersistence.js" />
+    <Content Include="servidor\node_modules\nedb\browser-version\test\testPersistence2.html" />
+    <Content Include="servidor\node_modules\nedb\browser-version\test\testPersistence2.js" />
+    <Content Include="servidor\node_modules\nedb\browser-version\test\underscore.min.js" />
+    <Content Include="servidor\node_modules\nedb\index.js" />
+    <Content Include="servidor\node_modules\nedb\lib\cursor.js" />
+    <Content Include="servidor\node_modules\nedb\lib\customUtils.js" />
+    <Content Include="servidor\node_modules\nedb\lib\datastore.js" />
+    <Content Include="servidor\node_modules\nedb\lib\executor.js" />
+    <Content Include="servidor\node_modules\nedb\lib\indexes.js" />
+    <Content Include="servidor\node_modules\nedb\lib\model.js" />
+    <Content Include="servidor\node_modules\nedb\lib\persistence.js" />
+    <Content Include="servidor\node_modules\nedb\lib\storage.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\async\lib\async.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\binary-search-tree\index.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\binary-search-tree\lib\avltree.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\binary-search-tree\lib\bst.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\binary-search-tree\lib\customUtils.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\binary-search-tree\test\avltree.test.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\binary-search-tree\test\bst.test.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\dist\localforage.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\dist\localforage.min.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\dist\localforage.nopromises.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\dist\localforage.nopromises.min.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\docs\fonts\icomoon.svg" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\docs\index.html" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\docs\localforage.min.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\docs\README.txt" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\docs\scripts\flatdoc.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\docs\scripts\jquery.min.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\docs\scripts\legacy.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\docs\theme\localforage.css" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\docs\theme\script.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\docs\theme\style.css" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\examples\index.html" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\examples\main.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\examples\no-driver.html" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\examples\require.html" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\examples\require.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\examples\websql-foo.html" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\Gruntfile.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\dist\lie.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\dist\lie.min.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\dist\lie.polyfill.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\dist\lie.polyfill.min.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\lib\index.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\index.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\bin\esparse.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\bin\esvalidate.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\doc\index.html" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\esprima.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\examples\detectnestedternary.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\examples\findbooleantrap.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\examples\tokendist.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\index.html" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\test\benchmarks.html" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\test\benchmarks.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\test\compare.html" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\test\compare.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\test\compat.html" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\test\compat.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\test\coverage.html" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\test\esprima.js.html" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\test\fbtest.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\test\harmonytest.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\test\index.html" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\test\module.html" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\test\module.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\test\reflect.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\test\run.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\test\runner.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\esprima-fb\test\test.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\jstransform\node_modules\base62\base62.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\jstransform\node_modules\base62\test\test.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\jstransform\src\docblock.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\jstransform\src\jstransform.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\jstransform\src\utils.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\jstransform\src\__tests__\jstransform-test.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\jstransform\visitors\es6-arrow-function-visitors.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\jstransform\visitors\es6-class-visitors.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\jstransform\visitors\es6-rest-param-visitors.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\jstransform\visitors\es6-template-visitors.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\through\index.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\through\test\async.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\through\test\auto-destroy.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\through\test\buffering.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\through\test\end.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\through\test\index.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\spec\es3ifyspec.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\immediate\dist\immediate.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\immediate\dist\immediate.min.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\immediate\lib\browser.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\immediate\lib\index.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\immediate\LICENSE.txt" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\inline-process-browser\index.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\inline-process-browser\node_modules\falafel\example\array.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\inline-process-browser\node_modules\falafel\example\keyword.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\inline-process-browser\node_modules\falafel\example\prompt.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\inline-process-browser\node_modules\falafel\index.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\inline-process-browser\node_modules\falafel\test\array.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\inline-process-browser\node_modules\falafel\test\async.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\inline-process-browser\node_modules\falafel\test\bin\run.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\inline-process-browser\node_modules\falafel\test\custom-parser.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\inline-process-browser\node_modules\falafel\test\es6.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\inline-process-browser\node_modules\falafel\test\for.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\inline-process-browser\node_modules\falafel\test\inspect.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\inline-process-browser\node_modules\falafel\test\opts.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\inline-process-browser\node_modules\falafel\test\parent.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\inline-process-browser\node_modules\through2\through2.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\index.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\node_modules\esmangle-evaluator\common.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\node_modules\recast\lib\comments.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\node_modules\recast\lib\fast-path.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\node_modules\recast\lib\lines.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\node_modules\recast\lib\mapping.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\node_modules\recast\lib\options.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\node_modules\recast\lib\parser.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\node_modules\recast\lib\patcher.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\node_modules\recast\lib\printer.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\node_modules\recast\lib\types.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\node_modules\recast\lib\util.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\node_modules\recast\main.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\node_modules\through2\through2.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\unreachable-branch-transform\unreachableBranchTransformer.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\polyfill.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\test\cover.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\test\test.html" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\src\drivers\indexeddb.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\src\drivers\localstorage.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\src\drivers\websql.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\src\localforage.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\src\utils\createBlob.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\src\utils\executeCallback.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\src\utils\executeTwoCallbacks.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\src\utils\idb.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\src\utils\isIndexedDBValid.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\src\utils\isLocalStorageValid.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\src\utils\isWebSQLValid.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\src\utils\promise.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\src\utils\serializer.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\test\dummyStorageDriver.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\test\photo.jpg" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\test\photo2.jpg" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\test\runner.browserify.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\test\runner.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\test\runner.webpack.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\test\saucelabs-browsers.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\test\serviceworker-client.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\test\test.api.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\test\test.browserify.html" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\test\test.callwhenready.html" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\test\test.callwhenready.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\test\test.config.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\test\test.customdriver.html" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\test\test.customdriver.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\test\test.datatypes.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\test\test.drivers.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\test\test.faultydriver.html" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\test\test.faultydriver.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\test\test.iframecontents.html" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\test\test.iframes.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\test\test.main.html" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\test\test.min.html" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\test\test.nodriver.html" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\test\test.nodriver.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\test\test.require.html" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\test\test.serviceworkers.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\test\test.webpack.html" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\test\test.webworkers.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\localforage\test\webworker-client.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\bin\cmd.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\bin\usage.txt" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\examples\pow.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\index.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\node_modules\minimist\example\parse.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\node_modules\minimist\index.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\node_modules\minimist\test\dash.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\node_modules\minimist\test\default_bool.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\node_modules\minimist\test\dotted.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\node_modules\minimist\test\long.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\node_modules\minimist\test\parse.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\node_modules\minimist\test\parse_modified.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\node_modules\minimist\test\short.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\node_modules\minimist\test\whitespace.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\test\chmod.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\test\clobber.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\test\mkdirp.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\test\opts_fs.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\test\opts_fs_sync.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\test\perm.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\test\perm_sync.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\test\race.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\test\rel.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\test\return.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\test\return_sync.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\test\root.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\test\sync.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\test\umask.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\mkdirp\test\umask_sync.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\underscore\favicon.ico" />
+    <Content Include="servidor\node_modules\nedb\node_modules\underscore\index.html" />
+    <Content Include="servidor\node_modules\nedb\node_modules\underscore\index.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\underscore\underscore-min.js" />
+    <Content Include="servidor\node_modules\nedb\node_modules\underscore\underscore.js" />
+    <Content Include="servidor\node_modules\nedb\test\cursor.test.js" />
+    <Content Include="servidor\node_modules\nedb\test\customUtil.test.js" />
+    <Content Include="servidor\node_modules\nedb\test\db.test.js" />
+    <Content Include="servidor\node_modules\nedb\test\executor.test.js" />
+    <Content Include="servidor\node_modules\nedb\test\indexes.test.js" />
+    <Content Include="servidor\node_modules\nedb\test\model.test.js" />
+    <Content Include="servidor\node_modules\nedb\test\persistence.test.js" />
+    <Content Include="servidor\node_modules\nedb\test_lac\loadAndCrash.test.js" />
+    <Content Include="servidor\node_modules\nedb\test_lac\openFds.test.js" />
+    <Content Include="servidor\server.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="servidor\node_modules\express\node_modules\send\node_modules\.bin\" />
+    <Folder Include="servidor\node_modules\nedb\node_modules\.bin\" />
+    <Folder Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\.bin\" />
+    <Folder Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\jstransform\node_modules\source-map\lib\" />
+    <Folder Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\jstransform\node_modules\source-map\test\" />
+    <Folder Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\es3ify\node_modules\jstransform\visitors\__tests__\" />
+    <Folder Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\inline-process-browser\node_modules\falafel\node_modules\" />
+    <Folder Include="servidor\node_modules\nedb\node_modules\localforage\node_modules\lie\node_modules\inline-process-browser\node_modules\through2\node_modules\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51326</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51326/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
