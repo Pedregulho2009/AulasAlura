@@ -122,6 +122,7 @@
     <Content Include="public\fonts\roboto\Roboto-Thin.ttf" />
     <Content Include="public\fonts\roboto\Roboto-Thin.woff" />
     <Content Include="public\fonts\roboto\Roboto-Thin.woff2" />
+    <Content Include="public\js\frase.js" />
     <Content Include="public\js\main.js" />
     <Content Include="public\js\placar.js" />
     <Content Include="servidor\data.db" />
