@@ -7,7 +7,13 @@ $(document).ready(function () {
     inicializaCronometro();
     inicializaMarcadores();
     $("#botao-reiniciar").click(reiniciaJogo);//atalho para a função click em on
+    atualizaPlcar();
 });
+
+function atualizaTempoInicial(tempo) {
+    tempoInicial = tempo;
+    $("#tempo-digitacao").text(tempo);
+}
 
 function atualizaTamanhoFrase() {
     var frase = $(".frase").text();
@@ -29,9 +35,9 @@ function inicializaContadores() {
     });
 }
 
-function inicializaCronometro() {
-    var tempoRestante = $("#tempo-digitacao").text();
+function inicializaCronometro() {    
     campo.one("focus", function () {
+        var tempoRestante = $("#tempo-digitacao").text();
         var cronometroId = setInterval(function () {
             tempoRestante--;
             $("#tempo-digitacao").text(tempoRestante);
@@ -63,9 +69,9 @@ function reiniciaJogo() {
     inicializaCronometro();
 }
 
-function inicializaMarcadores() {
-    var frase = $(".frase").text();
+function inicializaMarcadores() {    
     campo.on("input", function () {
+        var frase = $(".frase").text();
         var digitado = campo.val();
         var comparavel = frase.substr(0, digitado.length);
 
