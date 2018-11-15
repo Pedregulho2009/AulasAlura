@@ -1,7 +1,7 @@
 {
-  "name": "AluraTyper",
+  "name": "aluratyper",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mini project: A type racer like game",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,5 +14,6 @@
     "consign": "^0.1.2",
     "express": "^4.14.0",
     "nedb": "^1.1.2"
-  }
+  },
+  "dependencies": {}
 }

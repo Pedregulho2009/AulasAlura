@@ -98,6 +98,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="public\css\index.css" />
     <Content Include="public\fonts\material-design-icons\Material-Design-Icons.eot" />
     <Content Include="public\fonts\material-design-icons\Material-Design-Icons.ttf" />
     <Content Include="public\fonts\material-design-icons\Material-Design-Icons.woff" />
@@ -122,9 +123,20 @@
     <Content Include="public\fonts\roboto\Roboto-Thin.ttf" />
     <Content Include="public\fonts\roboto\Roboto-Thin.woff" />
     <Content Include="public\fonts\roboto\Roboto-Thin.woff2" />
+    <Content Include="public\index.html" />
     <Content Include="public\js\frase.js" />
     <Content Include="public\js\main.js" />
     <Content Include="public\js\placar.js" />
+    <Content Include="public\js\selectize.js" />
+    <Content Include="public\js\slider.js" />
+    <Content Include="public\js\tooltipster.bundle.min.js" />
+    <Content Include="public\slick\ajax-loader.gif" />
+    <Content Include="public\slick\fonts\slick.svg" />
+    <Content Include="public\slick\slick-theme.css" />
+    <Content Include="public\slick\slick.css" />
+    <Content Include="public\slick\slick.js" />
+    <Content Include="public\slick\slick.min.js" />
+    <Content Include="public\__MACOSX\._index.html" />
     <Content Include="servidor\data.db" />
     <Content Include="servidor\node_modules\body-parser\HISTORY.md" />
     <Content Include="servidor\node_modules\body-parser\LICENSE" />
@@ -558,6 +570,14 @@
     <Content Include="servidor\node_modules\nedb\test_lac\openFdsTestFile2" />
     <Content Include="servidor\package.json" />
     <Content Include="servidor\README.md" />
+    <Content Include="public\slick\config.rb" />
+    <Content Include="public\slick\fonts\slick.eot" />
+    <Content Include="public\slick\fonts\slick.ttf" />
+    <Content Include="public\slick\fonts\slick.woff" />
+    <Content Include="public\slick\slick-theme.less" />
+    <Content Include="public\slick\slick-theme.scss" />
+    <Content Include="public\slick\slick.less" />
+    <Content Include="public\slick\slick.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

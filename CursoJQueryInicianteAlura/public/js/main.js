@@ -8,6 +8,13 @@ $(document).ready(function () {
     inicializaMarcadores();
     $("#botao-reiniciar").click(reiniciaJogo);//atalho para a função click em on
     atualizaPlcar();
+    $("#usuarios").selectize({
+        create: true,
+        sortField: 'text'
+    });
+    $(".tooltip").tooltipster({
+        trigger:"custom"
+    });
 });
 
 function atualizaTempoInicial(tempo) {
@@ -35,7 +42,7 @@ function inicializaContadores() {
     });
 }
 
-function inicializaCronometro() {    
+function inicializaCronometro() {
     campo.one("focus", function () {
         var tempoRestante = $("#tempo-digitacao").text();
         var cronometroId = setInterval(function () {
@@ -69,7 +76,7 @@ function reiniciaJogo() {
     inicializaCronometro();
 }
 
-function inicializaMarcadores() {    
+function inicializaMarcadores() {
     campo.on("input", function () {
         var frase = $(".frase").text();
         var digitado = campo.val();

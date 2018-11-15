@@ -32,7 +32,7 @@ function removeLinha() {
 
 function inserirPlacar() {
     var corpoTabela = $(".placar").find("tbody");
-    var usuario = "Douglas";
+    var usuario = $("#usuarios").val();
     var numPalavras = $("#contador-palavras").text();
     var botaoRemover = "<a href='#' class='botao-remover'><i class='small material-icons'>delete</i></a>";
 
@@ -79,7 +79,14 @@ function sincronizarPlacar() {
     };
     $.post("http://localhost:3000/placar", dados, function () {
         console.log("Dados salvos no placar.");
+        $(".tooltip").tooltipster("open").tooltipster("content","Sucesso ao sincronizar!");
     })
+        .fail(function () {
+            $(".tooltip").tooltipster("open").tooltipster("content", "Falha ao sincronizar!");
+        })
+        .always(function () {
+        setTimeout(function () { $(".tooltip").tooltipster("close"); }, 1200)       
+    });
 }
 
 function atualizaPlcar() {
